@@ -1,0 +1,129 @@
+
+.card-container {
+    -fx-background-color: #2c3e50;
+    -fx-border-radius: 10;
+    -fx-padding: 20;
+    -fx-min-width: 200;
+    -fx-min-height: 300;
+    -fx-background-size: cover;
+}
+/* Styles pour le titre du formulaire */
+.form-title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #023315;
+    -fx-font-family: 'Arial', sans-serif;
+}
+
+
+.fancy-label {
+    -fx-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.grid-pane {
+    -fx-background-color: #7aa95c;
+    -fx-padding: 25;
+    -fx-hgap: 15;
+    -fx-vgap: 15;
+    -fx-alignment: center;
+}
+
+.label {
+    -fx-font-size: 15px;
+    -fx-text-fill: #2c3e50;
+    -fx-padding: 5 0 5 0;
+    -fx-font-family: 'Segoe UI', Tahoma, Geneva, Verdana;
+    -fx-font-weight: bold;
+}
+
+.text-field {
+    -fx-font-size: 15px;
+    -fx-padding: 8;
+    -fx-pref-width: 250;
+    -fx-background-radius: 15;
+}
+
+.envoyer-button {
+    -fx-font-size: 13px;
+    -fx-padding: 10 16;
+    -fx-min-width: 230;
+    -fx-min-height: -5;
+    -fx-background-radius: 10;
+    -fx-background-color: #a62609;
+    -fx-text-fill: white;
+}
+
+.upload-button {
+    -fx-font-size: 18px;
+    -fx-padding: 10 16;
+    -fx-min-width: 60;
+    -fx-background-radius: 10;
+    -fx-text-fill: #a62609;
+}
+
+.upload-button {
+    -fx-background-color: #2c3e50;
+}
+
+.envoyer-button:hover {
+    -fx-background-color: #2c3e50;
+}
+
+.upload-button:hover {
+    -fx-background-color: #A62609;
+}
+/* Style du fond du formulaire */
+.root {
+    -fx-background-color: rgba(224, 216, 216, 0.4); /* Couleur de fond de la fenêtre */
+}
+
+/* Style du conteneur principal du formulaire */
+.grid-pane {
+    -fx-background-color: rgb(3, 21, 89); /* Couleur de fond de la grille avec transparence */
+    -fx-background-radius: 20px; /* Rayon des coins de la grille */
+    -fx-padding: 40px; /* Espacement intérieur de la grille */
+    -fx-alignment: center; /* Centrer les éléments horizontalement */
+}
+
+/* Style des étiquettes */
+.label {
+    -fx-font-size: 14px; /* Taille de police des étiquettes */
+    -fx-text-fill: rgb(16, 5, 119); /* Couleur du texte des étiquettes */
+    -fx-font-weight: bold; /* Mettre la police en gras */
+}
+
+/* Style des champs de texte */
+.text-field {
+    -fx-pref-width: 200px; /* Largeur préférée des champs de texte */
+    -fx-pref-height: 30px; /* Hauteur préférée des champs de texte */
+}
+
+/* Style des boutons */
+.button {
+    -fx-background-color: #055425; /* Couleur de fond du bouton */
+    -fx-text-fill: white; /* Couleur du texte du bouton */
+    -fx-font-size: 10px; /* Taille de police du bouton */
+    -fx-pref-width: 150px; /* Largeur préférée du bouton */
+    -fx-pref-height: 40px; /* Hauteur préférée du bouton */
+    -fx-background-radius: 15px; /* Rayon des coins du bouton */
+}
+
+/* Style des boutons lorsqu'ils sont survolés */
+.button:hover {
+    -fx-background-color: rgba(101, 5, 21, 0.89); /* Couleur de fond du bouton lorsqu'il est survolé */
+}
+
+/* Styles for the image */
+.image-style {
+    -fx-fit-width: 200px; /* Largeur souhaitée */
+    -fx-fit-height: 200px; /* Hauteur souhaitée */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0, 0, 0); /* Ombre portée */
+    -fx-opacity: 0.8; /* Opacité de l'image */
+}
+
+/* Style des boutons lorsqu'ils sont enfoncés */
+.button:pressed {
+    -fx-background-color: rgba(54, 124, 57, 0); /* Couleur de fond du bouton lorsqu'il est enfoncé */
+}

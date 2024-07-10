@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="650.0" minWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bty.Controllers.usercontroller.CoachesFormController">
+
+    <AnchorPane fx:id="main_form" prefHeight="700.0" prefWidth="800.0">
+        <BorderPane layoutX="138.4" layoutY="29.0" prefHeight="700.0" prefWidth="800.0" styleClass="border-pane" stylesheets="dashboardDesign.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="138.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+
+
+
+            <center>
+                <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                    <!--*******************************************  DASHBOARD 🙂   *****************************-->
+                    <AnchorPane fx:id="dashboard_form" layoutX="143.0" layoutY="-6.0" prefHeight="706.0" prefWidth="1374.0" style="-fx-background-color: white;" stylesheets="dashboardDesign.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-6.0">
+                        <children>
+                            <AnchorPane fx:id="coaches_form" layoutX="196.8" prefHeight="706.0" prefWidth="1106.0" visible="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="197.0" AnchorPane.rightAnchor="72.0" AnchorPane.topAnchor="0.0">
+                                <AnchorPane layoutX="218.0" layoutY="14.0" prefHeight="661.0" prefWidth="858.0" stylesheets="dashboardDesign.css" AnchorPane.bottomAnchor="22.0" AnchorPane.leftAnchor="249.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="22.0">
+                                    <styleClass>
+                                        <String fx:value="white-bg" />
+                                        <String fx:value="shadow" />
+                                    </styleClass>
+                                    <AnchorPane layoutX="23.2" layoutY="72.0" prefHeight="394.0" prefWidth="350.0" stylesheets="dashboardDesign.css" AnchorPane.leftAnchor="23.0">
+                                        <styleClass>
+                                            <String fx:value="white-bg" />
+                                            <String fx:value="shadow" />
+                                        </styleClass>
+                                        <Label layoutX="21.0" layoutY="109.0" text="Nom Complet">
+                                            <font>
+                                                <Font size="14.0" />
+                                            </font>
+                                        </Label>
+                                        <TextField fx:id="coaches_name" layoutX="117.0" layoutY="107.0" prefHeight="25.0" prefWidth="148.0" styleClass="textfield" stylesheets="dashboardDesign.css" AnchorPane.leftAnchor="117.0" AnchorPane.rightAnchor="20.600000000000023" />
+                                        <Label layoutX="21.0" layoutY="151.0" text="Email">
+                                            <font>
+                                                <Font size="14.0" />
+                                            </font>
+                                        </Label>
+                                        <TextField fx:id="coaches_email" layoutX="117.0" layoutY="149.0" prefHeight="25.0" prefWidth="145.0" styleClass="textfield" stylesheets="dashboardDesign.css" AnchorPane.leftAnchor="117.0" AnchorPane.rightAnchor="20.600000000000023" AnchorPane.topAnchor="149.0" />
+                                        <Label layoutX="21.0" layoutY="190.0" text="Telephone">
+                                            <font>
+                                                <Font size="14.0" />
+                                            </font>
+                                        </Label>
+                                        <TextField fx:id="coaches_telephone" layoutX="117.0" layoutY="188.0" prefHeight="25.0" prefWidth="148.0" styleClass="textfield" stylesheets="dashboardDesign.css" AnchorPane.leftAnchor="117.0" AnchorPane.rightAnchor="20.600000000000023" />
+                                        <Button fx:id="coaches_createBtn" layoutX="26.0" layoutY="283.0" mnemonicParsing="false" onAction="#coachesCreateBtn" prefHeight="43.0" prefWidth="144.0" styleClass="btn" stylesheets="dashboardDesign.css" text="Créer" />
+                                        <Button fx:id="coaches_updateBtn" layoutX="180.0" layoutY="283.0" mnemonicParsing="false" onAction="#coachesUpdateBtn" prefHeight="43.0" prefWidth="144.0" styleClass="btn" stylesheets="dashboardDesign.css" text="Modifier" />
+                                    </AnchorPane>
+                                    <ImageView fitHeight="401.0" fitWidth="426.0" layoutX="428.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+                                        <Image url="@undraw_Authentication_re_svpt.png" />
+                                    </ImageView>
+                                </AnchorPane>
+                            </AnchorPane>
+                        </children>
+                    </AnchorPane>
+
+
+                </AnchorPane>
+            </center>
+        </BorderPane>
+    </AnchorPane>
+</StackPane>

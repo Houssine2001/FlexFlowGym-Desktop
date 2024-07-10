@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="700.0" minWidth="1366.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bty.Controllers.usercontroller.UserProfilController">
+
+    <AnchorPane fx:id="main_form" prefHeight="200.0" prefWidth="200.0">
+        <BorderPane layoutX="-8.0" layoutY="29.0" prefHeight="600.0" prefWidth="1100.0" styleClass="border-pane" stylesheets="dashboardDesign.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-8.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+
+
+
+            <center>
+                <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                    <!--*******************************************  DASHBOARD 🙂   *****************************-->
+                    <AnchorPane fx:id="dashboard_form" layoutX="143.0" layoutY="-6.0" prefHeight="706.0" prefWidth="1374.0" style="-fx-background-color: white;" stylesheets="dashboardDesign.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-6.0">
+                        <children>
+                            <AnchorPane fx:id="user_profil" layoutX="6.0" prefHeight="750.0" prefWidth="1100.0" visible="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <AnchorPane layoutX="70.0" layoutY="22.0" prefHeight="684.0" prefWidth="1020.0" stylesheets="dashboardDesign.css" AnchorPane.bottomAnchor="39.0" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="284.0" AnchorPane.topAnchor="22.0">
+                                    <styleClass>-->
+                                        <String fx:value="white-bg" />
+                                        <String fx:value="shadow" />
+                                    </styleClass>
+                                    <AnchorPane fx:id="box_1" layoutX="48.0" layoutY="181.0" prefHeight="236.0" prefWidth="350.0" stylesheets="dashboardDesign.css" AnchorPane.leftAnchor="48.0">
+                                        <styleClass>
+                                            <String fx:value="white-bg" />
+                                            <String fx:value="shadow" />
+                                        </styleClass>
+                                        <children>
+                                            <Label layoutX="35.0" layoutY="34.0" text="Nom Complet">
+                                                <font>
+                                                    <Font size="14.0" />
+                                                </font>
+                                            </Label>
+                                            <TextField fx:id="profil_name" layoutX="131.0" layoutY="32.0" prefHeight="26.0" prefWidth="180.0" styleClass="textfield" stylesheets="dashboardDesign.css" />
+                                            <Label layoutX="35.0" layoutY="76.0" text="Email">
+                                                <font>
+                                                    <Font size="14.0" />
+                                                </font>
+                                            </Label>
+                                            <TextField fx:id="profil_email" layoutX="131.0" layoutY="73.0" prefHeight="26.0" prefWidth="180.0" styleClass="textfield" stylesheets="dashboardDesign.css" />
+                                            <Label layoutX="35.0" layoutY="120.0" text="Telephone">
+                                                <font>
+                                                    <Font size="14.0" />
+                                                </font>
+                                            </Label>
+                                            <TextField fx:id="profil_telephone" layoutX="131.0" layoutY="118.0" prefHeight="26.0" prefWidth="180.0" styleClass="textfield" stylesheets="dashboardDesign.css" />
+                                            <Button fx:id="coaches_updateBtn1" layoutX="49.0" layoutY="176.0" mnemonicParsing="false" onAction="#coachesUpdateBtn" prefHeight="37.0" prefWidth="251.0" styleClass="btn" stylesheets="dashboardDesign.css" text="Modifier" />
+                                        </children>
+                                    </AnchorPane>
+                                    <AnchorPane fx:id="box_11" layoutX="427.0" layoutY="181.0" prefHeight="236.0" prefWidth="350.0" stylesheets="dashboardDesign.css">
+                                        <styleClass>
+                                            <String fx:value="white-bg" />
+                                            <String fx:value="shadow" />
+                                        </styleClass>
+                                        <children>
+                                            <Label layoutX="15.0" layoutY="84.0" text="Confirm">
+                                                <font>
+                                                    <Font size="14.0" />
+                                                </font>
+                                            </Label>
+                                            <PasswordField fx:id="new_password" layoutX="111.0" layoutY="82.0" prefHeight="25.0" prefWidth="148.0" styleClass="textfield" stylesheets="dashboardDesign.css" AnchorPane.leftAnchor="111.0" AnchorPane.rightAnchor="27.0" />
+
+                                            <Label layoutX="14.0" layoutY="48.0" text="New Password">
+                                                <font>
+                                                    <Font size="14.0" />
+                                                </font>
+                                            </Label>
+                                            <PasswordField fx:id="confirm_password" layoutX="109.0" layoutY="45.0" prefHeight="26.0" prefWidth="215.0" styleClass="textfield" stylesheets="dashboardDesign.css" />
+                                        </children>
+                                        <Button fx:id="profil_update" layoutX="49.0" layoutY="182.0" mnemonicParsing="false" onAction="#updatePassword" prefHeight="37.0" prefWidth="251.0" styleClass="btn" stylesheets="dashboardDesign.css" text="Changer Mot de Passe" AnchorPane.leftAnchor="49.0" AnchorPane.rightAnchor="50.19999999999999" />
+                                    </AnchorPane>
+                                    <ImageView fx:id="profile_img" fitHeight="116.0" fitWidth="861.0" layoutX="229.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true">
+                                        <image>
+                                            <Image url="@undraw_Pic_profile_re_7g2h.png" />
+                                        </image>
+                                        <!--                        <clip>-->
+                                        <!--                            <Circle centerX="430.5" centerY="58.0" radius="50" />-->
+                                        <!--                        </clip>-->
+                                    </ImageView>
+                                    <Button fx:id="update_img_btn" layoutX="386.0" layoutY="69.0" mnemonicParsing="false" onAction="#updateImgBtn" prefHeight="37.0" prefWidth="125.0" styleClass="btn" stylesheets="dashboardDesign.css" text="Modifier" />
+                                    <ImageView fx:id="image" fitHeight="199.0" fitWidth="373.0" layoutX="386.0" layoutY="485.0" pickOnBounds="true" preserveRatio="true" styleClass="border-radius">
+                                        <image>
+                                            <Image url="@undraw_Personal_info_re_ur1n.png" />
+                                        </image>
+                                    </ImageView>
+                                    <ImageView fx:id="QrCode" fitHeight="145.0" fitWidth="186.0" layoutX="57.0" layoutY="492.0" pickOnBounds="true" preserveRatio="true" />
+                                    <TextField fx:id="CodeInput" layoutX="64.0" layoutY="644.0" />
+                                    <Button fx:id="verifCode_btn" layoutX="238.0" layoutY="643.0" mnemonicParsing="false" onAction="#verifCode" prefHeight="26.0" prefWidth="110.0" styleClass="btn" stylesheets="dashboardDesign.css" text="verifier code" />
+                                    <CheckBox fx:id="checkMfa_btn" layoutX="258.0" layoutY="434.0" mnemonicParsing="false" onAction="#checked" prefHeight="18.0" prefWidth="51.0" />
+                                    <Label fx:id="error2fa_lbl" layoutX="64.0" layoutY="675.0" prefHeight="18.0" prefWidth="220.0" styleClass="error_lbl" stylesheets="loginDesign.css" />
+                                    <Label layoutX="78.0" layoutY="433.0" prefHeight="17.0" prefWidth="180.0" text="Double Authentification :">
+                                        <font>
+                                            <Font name="System Bold" size="14.0" />
+                                        </font>
+                                    </Label>
+                                    <FontAwesomeIconView glyphName="LOCK" layoutX="51.0" layoutY="450.0" size="20" />
+                                </AnchorPane>
+                            </AnchorPane>
+                        </children>
+                    </AnchorPane>
+
+
+                </AnchorPane>
+            </center>
+        </BorderPane>
+    </AnchorPane>
+</StackPane>

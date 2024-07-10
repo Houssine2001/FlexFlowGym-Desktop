@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="login_container" stylesheets="verifCode.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bty.Controllers.usercontroller.RestPwdController" >
+    <VBox prefHeight="400.0" prefWidth="200.0" styleClass="login_logo_container" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <Text fill="#ef2424" strokeType="OUTSIDE" strokeWidth="0.0" text="FlexFlow" wrappingWidth="104.017578125">
+            <stroke>
+                <LinearGradient endX="1.0" endY="1.0">
+                    <stops>
+                        <Stop>
+                            <color>
+                                <Color />
+                            </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                            <color>
+                                <Color red="1.0" green="1.0" blue="1.0" />
+                            </color>
+                        </Stop>
+                    </stops>
+                </LinearGradient>
+            </stroke></Text>
+    </VBox>
+    <VBox layoutX="232.0" layoutY="8.0" prefHeight="347.0" prefWidth="354.0" styleClass="login_form_container" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="8.0">
+        <Label fx:id="error_lbl" styleClass="error_lbl" />
+        <Label alignment="TOP_CENTER" contentDisplay="CENTER" style="-fx-font-weight: bold; -fx-alignment: center; -fx-font-size: 20px;" text="réinitialiser le mot de passe" textAlignment="CENTER">
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets></Label>
+        <Label layoutX="10.0" layoutY="45.0" text="nouveau mot de passe" />
+        <PasswordField fx:id="newPwd_txtfd" prefHeight="25.0" prefWidth="235.0" styleClass="input_field" />
+        <Label layoutX="10.0" layoutY="28.0" text="confirmer le nouveau mot de passe" />
+        <PasswordField fx:id="confrmPwd_txtfd1" layoutX="10.0" layoutY="63.0" prefHeight="25.0" prefWidth="235.0" styleClass="input_field" />
+        <Button fx:id="resetpwd_btn" mnemonicParsing="false" onAction="#resetPWD" prefHeight="25.0" prefWidth="96.0" text="Enter" />
+    </VBox>
+</AnchorPane>

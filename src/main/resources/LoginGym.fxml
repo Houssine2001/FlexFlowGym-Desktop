@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bty.Controllers.usercontroller.LoginGymController">
+   <children>
+      <AnchorPane fx:id="main_form" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <AnchorPane fx:id="signup_form" prefHeight="400.0" prefWidth="300.0" styleClass="login-form" stylesheets="loginDesign.css">
+               <FontAwesomeIconView fill="#3f2ba4" glyphName="USER_PLUS" layoutX="115.0" layoutY="65.0" size="5em" />
+               <children>
+                  <Label layoutX="106.0" layoutY="74.0" text="Sign Up">
+                     <font>
+                        <Font name="Berlin Sans FB" size="25.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="su_username" layoutX="40.0" layoutY="116.0" prefHeight="35.0" prefWidth="220.0" promptText="Username" styleClass="textfield" stylesheets="loginDesign.css" />
+                  <TextField fx:id="su_telephone" layoutX="39.0" layoutY="164.0" prefHeight="35.0" prefWidth="220.0" promptText="Telephone" styleClass="textfield" stylesheets="loginDesign.css" />
+                  <TextField fx:id="su_email" layoutX="39.0" layoutY="210.0" prefHeight="35.0" prefWidth="220.0" promptText="Email Address" styleClass="textfield" stylesheets="loginDesign.css" />
+                  <PasswordField fx:id="su_password" layoutX="39.0" layoutY="255.0" prefHeight="35.0" prefWidth="220.0" promptText="Password" styleClass="textfield" stylesheets="loginDesign.css" />
+                  <Button fx:id="su_signupBtn" layoutX="40.0" layoutY="305.0" mnemonicParsing="false" onAction="#signup" prefHeight="40.0" prefWidth="220.0" styleClass="login-btn" stylesheets="loginDesign.css" text="Signup" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="login_form" layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="300.0" styleClass="login-form" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <FontAwesomeIconView fill="#3f2ba4" glyphName="USER" layoutX="126.0" layoutY="104.0" size="5em" />
+                  <Label layoutX="116.0" layoutY="113.0" text="Sign In">
+                     <font>
+                        <Font name="Berlin Sans FB" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="errorEmail_lbl" layoutX="40.0" layoutY="191.0" prefHeight="18.0" prefWidth="220.0" styleClass="error_lbl" stylesheets="loginDesign.css" />
+                  <TextField fx:id="si_email" layoutX="40.0" layoutY="158.0" onAction="#login" prefHeight="35.0" prefWidth="220.0" promptText="Email" styleClass="textfield" stylesheets="loginDesign.css" />
+                  <PasswordField fx:id="si_password" layoutX="40.0" layoutY="209.0" onAction="#login" prefHeight="35.0" prefWidth="220.0" promptText="Mot de Passe" styleClass="textfield" stylesheets="loginDesign.css" />
+                  <Button fx:id="si_loginBtn" layoutX="40.0" layoutY="304.0" mnemonicParsing="false" onAction="#login" prefHeight="40.0" prefWidth="220.0" styleClass="login-btn" stylesheets="loginDesign.css" text="Login" />
+                  <Text fx:id="restPwd_btn" layoutX="40.0" layoutY="272.0" onMouseClicked="#restPwd" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-hover-hand" text="Mot de Passe Oublié ?" />
+                  <Label fx:id="errorPwd_lbl" layoutX="40.0" layoutY="244.0" prefHeight="18.0" prefWidth="220.0" styleClass="error_lbl" stylesheets="loginDesign.css" />
+                  <Label fx:id="errorTop_lbl" layoutX="12.0" layoutY="35.0" prefHeight="18.0" prefWidth="285.0" styleClass="error_lbl" stylesheets="loginDesign.css" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="sub_form" prefHeight="400.0" prefWidth="300.0" styleClass="side-form" stylesheets="loginDesign.css" AnchorPane.leftAnchor="0.0">
+               <children>
+                  <FontAwesomeIconView fill="WHITE" glyphName="USERS" layoutX="86.0" layoutY="171.0" size="10em" />
+                  <Label layoutX="46.0" layoutY="200.0" text="Gym Management System" textFill="WHITE">
+                     <font>
+                        <Font name="Tahoma" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="sub_signupBtn" layoutX="60.0" layoutY="351.0" mnemonicParsing="false" onAction="#signupSlider" prefHeight="35.0" prefWidth="181.0" styleClass="side-btn" stylesheets="loginDesign.css" text="Sign Up" />
+                  <Button fx:id="sub_loginBtn" layoutX="60.0" layoutY="351.0" mnemonicParsing="false" onAction="#loginSlider" prefHeight="35.0" prefWidth="181.0" styleClass="side-btn" stylesheets="loginDesign.css" text="Sign In" visible="true" />
+                  <Label fx:id="edit_label" layoutX="83.0" layoutY="316.0" text="Créer un compte" textFill="WHITE">
+                     <font>
+                        <Font name="Tahoma" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="35.0" prefWidth="600.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Button fx:id="close" mnemonicParsing="false" onAction="#close" prefHeight="24.0" prefWidth="50.0" styleClass="close" stylesheets="loginDesign.css" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+                     <graphic>
+                        <FontAwesomeIconView fx:id="close_icon" glyphName="CLOSE" size="1.2em" />
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

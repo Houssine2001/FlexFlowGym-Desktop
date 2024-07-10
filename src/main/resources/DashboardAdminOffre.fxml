@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="700.0" minWidth="1366.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bty.Controllers.graphiqueGCP.Dashbordadmin">
+
+    <AnchorPane fx:id="main_form" prefHeight="200.0" prefWidth="200.0">
+        <BorderPane layoutX="-8.0" layoutY="29.0" prefHeight="600.0" prefWidth="1100.0" styleClass="border-pane" stylesheets="dashboardDesign.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-8.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+
+
+
+            <center>
+                <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                    <!--*******************************************  DASHBOARD :)   *****************************-->
+                    <AnchorPane fx:id="dashboard_form" layoutX="143.0" layoutY="-6.0" prefHeight="706.0" prefWidth="1374.0" style="-fx-background-color: white;" stylesheets="dashboardDesign.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-6.0">
+                        <children>
+                            <AnchorPane layoutX="289.0" layoutY="14.0" prefHeight="157.0" prefWidth="554.0" styleClass="bg" stylesheets="dashboardDesign.css">
+                                <styleClass>
+                                    <String fx:value="white-bg" />
+                                    <String fx:value="shadow" />
+                                </styleClass>
+                                <children>
+
+                                    <AnchorPane layoutX="161.0" layoutY="11.0" prefHeight="135.0" prefWidth="246.0" styleClass="nav2" stylesheets="dashboardDesign.css">
+                                        <children>
+                                            <FontAwesomeIconView fill="WHITE" glyphName="SHOPPING_BAG" layoutX="14.0" layoutY="91.0" size="5em" />
+                                            <Label alignment="CENTER_RIGHT" layoutX="84.0" layoutY="17.0" prefHeight="17.0" prefWidth="148.0" text="Demande en  attente" textFill="WHITE">
+                                                <font>
+                                                    <Font name="Tahoma" size="15.0" />
+                                                </font>
+                                            </Label>
+                                            <Label fx:id="dashboard_NC" alignment="CENTER" layoutX="84.0" layoutY="100.0" prefHeight="17.0" prefWidth="148.0" text="0" textFill="WHITE">
+                                                <font>
+                                                    <Font name="Tahoma" size="15.0" />
+                                                </font>
+                                            </Label>
+                                        </children>
+                                    </AnchorPane>
+
+                                </children>
+                            </AnchorPane>
+
+                            <AnchorPane layoutX="8.0" layoutY="293.0" prefHeight="397.0" prefWidth="1120.0" stylesheets="dashboardDesign.css">
+                                <styleClass>
+                                    <String fx:value="white-bg1" />
+                                    <String fx:value="shadow" />
+                                </styleClass>
+                                <children>
+
+                                    <AnchorPane layoutX="2.0" layoutY="29.0" prefHeight="356.0" prefWidth="1117.0">
+                                        <children>
+
+                                            <TableView fx:id="tableView" layoutX="-1.0" layoutY="-94.0" prefHeight="453.0" prefWidth="1118.0">
+                                                <columns>
+                                                    <TableColumn fx:id="IdCol" prefWidth="98.0" text="Nom d'offre" />
+                                                    <TableColumn fx:id="specialiteCol" prefWidth="146.0" text="Specialite" />
+                                                    <TableColumn fx:id="tarifnCol" prefWidth="227.0" text="Tarif par heure" />
+                                                    <TableColumn fx:id="idCoachCol" prefWidth="117.0" text="id_Coach" />
+                                                    <TableColumn fx:id="etatCol" prefWidth="327.0" text="Etat" />
+
+                                                    <TableColumn fx:id="actionColumn" prefWidth="202.0" text="Actions" />
+                                                </columns>
+                                            </TableView>
+                                        </children>
+                                    </AnchorPane>
+                                </children>
+                            </AnchorPane>
+                            <Separator layoutX="14.0" layoutY="179.0" prefHeight="0.0" prefWidth="1099.0" />
+<!--                            <Button fx:id="ajout_produit" layoutX="1054.0" layoutY="212.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="69.0" styleClass="nav-btnproduit" stylesheets="dashboardDesign.css" text="Ajout" />-->
+                            <Button fx:id="actuliser" layoutX="964.0" layoutY="190.0" mnemonicParsing="false" onAction="#actualiserTable" styleClass="nav-btnactualiser" stylesheets="dashboardDesign.css" text="Actualiser" />
+                        </children>
+                    </AnchorPane>
+
+
+                </AnchorPane>
+            </center>
+        </BorderPane>
+    </AnchorPane>
+</StackPane>

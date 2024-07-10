@@ -1,0 +1,148 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 11, 2023, 1:44:25 PM
+    Author     : WALID
+*/
+
+/* Define fonts */
+
+/* Apply styles to all containers */
+.root {
+    -fx-background-color: #2c3e50;
+    -fx-font-family: 'Sofia Sans Condensed SemiBold', sans-serif;
+    -fx-font-size: 18px;
+}
+/* Apply styles to buttons */
+.pay-button {
+    -fx-background-color:#a71930;
+    -fx-background-radius: 10px;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 16px;
+    -fx-padding: 8px 16px;
+    -fx-border-radius: 4px;
+}
+
+.pay-button:hover {
+    -fx-background-color: #900a24;
+}
+
+/* Apply styles to text fields */
+.text-field {
+    -fx-background-color: #6c757d;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 16px;
+    -fx-padding: 8px;
+    -fx-border-radius: 4px;
+}
+
+.text-field:focused {
+    -fx-background-color:#868b8f;
+}
+/* Apply styles to labels */
+.label {
+    -fx-text-fill: #d6435c;
+    -fx-font-size: 19px;
+}
+
+/* Apply styles to combo boxes */
+.combo-box {
+    -fx-background-color: #6c757d;
+    -fx-font-size: 15px;
+    -fx-padding: 8px;
+    -fx-border-radius: 4px;
+}
+
+.combo-box:focused {
+    -fx-background-color: #9E978E;
+}
+
+/* Apply styles to check boxes */
+.check-box {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14px;
+}
+
+/* Apply styles to progress bars */
+.progress-bar {
+    -fx-accent: #2ecc71;
+}
+
+/* Apply styles to sliders */
+.slider {
+    -fx-background-color: #6c757d;
+    -fx-text-fill: #fff;
+    -fx-font-size: 14px;
+}
+
+.slider .thumb {
+    -fx-background-color: #a71930;
+}
+
+/* Apply styles to scroll bars */
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #a71930;
+}
+
+.scroll-bar:horizontal .thumb {
+    -fx-background-color: #a71930;
+}
+
+/* Apply styles to toolbars */
+.tool-bar {
+    -fx-background-color: #4f5257;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14px;
+    -fx-padding: 8px;
+    -fx-border-radius: 4px;
+}
+/* Apply styles to text areas */
+.text-area {
+    -fx-background-color: #6c757d;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14px;
+    -fx-padding: 8px;
+    -fx-border-radius: 4px;
+}
+.text-area:focused {
+    -fx-background-color: #ffffff;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #262829;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: black;
+}
+
+.table-view .table-row-cell {
+    -fx-background-color: #f5f5f5;
+}
+
+.table-view .table-row-cell:odd {
+    -fx-background-color: #e8e8e8;
+}
+
+.table-view .table-row-cell:selected {
+    -fx-background-color: #757778;
+    -fx-text-fill: white;
+}
+.default-color0.chart-bar{
+    -fx-bar-fill: #900a24;
+}
+.chart-title{
+    -fx-text-fill: #ffffff;
+    -fx-font-size:22px;
+}
+.chart-pie-label-line {
+    -fx-stroke: #900a24;
+    -fx-fill: #900a24;
+}
+.chart-pie-label { 
+    -fx-fill: #ffffff;
+    -fx-font-size: 19;
+} 

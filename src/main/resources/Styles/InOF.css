@@ -1,0 +1,22 @@
+.button {
+    -fx-background-color: #4CAF50; /* Couleur de fond */
+    -fx-text-fill: white; /* Couleur du texte */
+    -fx-font-size: 14px; /* Taille de la police */
+    -fx-padding: 8px 16px; /* Espacement interne (haut/bas, gauche/droite) */
+    -fx-border-radius: 5px; /* Rayon des coins */
+    -fx-border-color: #4CAF50; /* Couleur de la bordure */
+}
+
+.button:hover {
+    -fx-background-color: #45a049; /* Couleur de fond au survol */
+    -fx-border-color: #45a049; /* Couleur de la bordure au survol */
+}
+
+.image-container {
+    -fx-padding: 10px; /* Espacement autour de l'image et du bouton */
+}
+
+.image-container > ImageView {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 5, 0.0, 0, 1); /* Ombre portée */
+}
+

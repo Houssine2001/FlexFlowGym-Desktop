@@ -1,0 +1,45 @@
+/* Style du fond du formulaire */
+.root {
+    -fx-background-color: rgba(224, 216, 216, 0.4); /* Couleur de fond de la fenêtre */
+}
+
+/* Style du conteneur principal du formulaire */
+.grid-pane {
+    -fx-background-color: rgb(3, 21, 89); /* Couleur de fond de la grille avec transparence */
+    -fx-background-radius: 20px; /* Rayon des coins de la grille */
+    -fx-padding: 25px; /* Espacement intérieur de la grille */
+    -fx-alignment: center; /* Centrer les éléments horizontalement */
+}
+
+/* Style des étiquettes */
+.label {
+    -fx-font-size: 14px; /* Taille de police des étiquettes */
+    -fx-text-fill: rgb(124, 4, 25); /* Couleur du texte des étiquettes */
+    -fx-font-weight: bold; /* Mettre la police en gras */
+}
+
+/* Style des champs de texte */
+.text-field {
+    -fx-pref-width: 200px; /* Largeur préférée des champs de texte */
+    -fx-pref-height: 30px; /* Hauteur préférée des champs de texte */
+}
+
+/* Style des boutons */
+.button {
+    -fx-background-color: #031559; /* Couleur de fond du bouton */
+    -fx-text-fill: white; /* Couleur du texte du bouton */
+    -fx-font-size: 14px; /* Taille de police du bouton */
+    -fx-pref-width: 100px; /* Largeur préférée du bouton */
+    -fx-pref-height: 40px; /* Hauteur préférée du bouton */
+    -fx-background-radius: 5px; /* Rayon des coins du bouton */
+}
+
+/* Style des boutons lorsqu'ils sont survolés */
+.button:hover {
+    -fx-background-color: rgb(5, 0, 1); /* Couleur de fond du bouton lorsqu'il est survolé */
+}
+
+/* Style des boutons lorsqu'ils sont enfoncés */
+.button:pressed {
+    -fx-background-color: rgba(54, 124, 57, 0); /* Couleur de fond du bouton lorsqu'il est enfoncé */
+}

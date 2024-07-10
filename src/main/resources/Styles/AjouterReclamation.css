@@ -1,0 +1,29 @@
+.login_container {
+    -fx-background-color:#DDE2C6;
+}
+
+
+.input_field {
+    -fx-background-color: #FFFFFF;
+    /*-fx-font-size: 1.2em;
+    -fx-pref-height: 35;*/
+
+}
+.label-titre{
+    -fx-text-fill: #2c3e50;
+    -fx-font-family: 'Arial', sans-serif;
+    -fx-font-weight: bold;
+}
+
+.ajouter-button {
+    -fx-font-size: 13px;
+    -fx-padding: 10 16;
+    -fx-min-width: 230;
+    -fx-min-height: -5;
+    -fx-background-radius: 10;
+    -fx-background-color: #A62609;
+    -fx-text-fill: white;
+}
+.ajouter-button:hover {
+    -fx-background-color: #2c3e50;
+}

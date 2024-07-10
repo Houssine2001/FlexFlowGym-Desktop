@@ -1,0 +1,141 @@
+.container {
+    -fx-spacing: 10;
+    -fx-padding: 30;
+}
+
+.table-view {
+    -fx-background-color: #ecf0f1; /* Couleur de fond de la table */
+}
+
+.table-row-cell {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #333333;
+}
+
+.button {
+    -fx-background-color: #7AA95C;
+    -fx-text-fill: white;
+    -fx-font-size: 13px;
+    -fx-font-family: 'Segoe UI', Tahoma, Geneva, Verdana;
+    -fx-font-weight: bold;
+    -fx-padding: 8 16;
+    -fx-background-radius: 12; /* Ajouter un peu de rembourrage pour un aspect plus propre */
+}
+
+.button:hover {
+    -fx-background-color: #7AA95C; /* Couleur du bouton au survol */
+}
+
+.button:pressed {
+    -fx-background-color: #2c3e50; /* Couleur du bouton lorsqu'il est enfoncé */
+}
+
+.alert {
+    -fx-background-color: #ffffff;
+}
+
+.alert .header-panel {
+    -fx-background-color: #27ae60; /* Couleur de l'en-tête de l'alerte */
+    -fx-text-fill: #ffffff; /* Couleur du texte de l'en-tête de l'alerte */
+}
+
+.action-button {
+    -fx-background-color: white; /* Couleur du bouton */
+    -fx-text-fill: #ffffff; /* Couleur du texte du bouton */
+    -fx-font-weight: bold;
+    -fx-padding: 3 6; /* Réduire le rembourrage pour minimiser l'espace */
+}
+
+.action-button:hover {
+    -fx-background-color: #c0392b; /* Couleur du bouton au survol */
+}
+
+
+
+
+
+/* Lignes de séparation horizontales du tableau */
+.table-view .column-header-background {
+    -fx-border-width: 0 0 1 0; /* Épaisseur de la bordure seulement en bas */
+    -fx-border-color: #2c3e50; /* Couleur de la bordure */
+}
+
+
+
+/* Ajustement de la largeur des colonnes */
+.table-view .column-id {
+    -fx-text-fill: #1E0F1C;
+    -fx-font-size: 13px;
+    -fx-font-family: 'Segoe UI', Tahoma, Geneva, Verdana;
+    -fx-pref-width: 40px; /* Largeur préférée de la colonne ID */
+}
+
+.table-view .column-nom {
+    -fx-text-fill: #1E0F1C;
+    -fx-font-size: 13px;
+    -fx-font-family: 'Segoe UI', Tahoma, Geneva, Verdana;
+    -fx-pref-width: 120px; /* Largeur préférée de la colonne Nom */
+}
+
+.table-view .column-description {
+    -fx-text-fill: #1E0F1C;
+    -fx-font-size: 13px;
+    -fx-font-family: 'Segoe UI', Tahoma, Geneva, Verdana;
+    -fx-pref-width: 187px; /* Largeur préférée de la colonne Description */
+}
+
+.table-view .column-prix {
+    -fx-text-fill: #1E0F1C;
+    -fx-font-size: 13px;
+    -fx-font-family: 'Segoe UI', Tahoma, Geneva, Verdana;
+
+    -fx-pref-width: 80px; /* Largeur préférée de la colonne Prix */
+}
+
+.table-view .column-type {
+    -fx-text-fill: #1E0F1C;
+    -fx-font-size: 13px;
+    -fx-font-family: 'Segoe UI', Tahoma, Geneva, Verdana;
+
+    -fx-pref-width: 120px; /* Largeur préférée de la colonne Type */
+}
+
+.table-view .column-quantite {
+    -fx-text-fill: #1E0F1C;
+    -fx-font-size: 13px;
+    -fx-font-family: 'Segoe UI', Tahoma, Geneva, Verdana;
+
+    -fx-pref-width: 80px; /* Largeur préférée de la colonne Quantité */
+}
+
+.table-view .column-quantiteVendues {
+    -fx-text-fill: #1E0F1C;
+    -fx-font-size: 13px;
+    -fx-font-family: 'Segoe UI', Tahoma, Geneva, Verdana;
+
+    -fx-pref-width: 110px; /* Largeur préférée de la colonne Quantité Vendue */
+}
+
+
+.text-input1 {
+    -fx-font-size: 14px;
+    -fx-padding: 5px;
+    -fx-pref-width: 250px;
+    -fx-background-radius: 10;
+}
+
+.label1 {
+    -fx-font-size: 14px;
+    -fx-padding: 5px;
+}
+
+.button1 {
+    -fx-font-size: 14px;
+    -fx-padding: 10px 20px;
+}
+
+
+
+
+
+

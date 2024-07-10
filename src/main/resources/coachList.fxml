@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="700.0" minWidth="1366.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bty.Controllers.usercontroller.CoachListController">
+
+    <AnchorPane fx:id="main_form" prefHeight="200.0" prefWidth="200.0">
+        <BorderPane layoutX="-8.0" layoutY="29.0" prefHeight="600.0" prefWidth="1100.0" styleClass="border-pane" stylesheets="dashboardDesign.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-8.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+
+
+
+            <center>
+                <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                    <!--*******************************************  DASHBOARD 🙂   *****************************-->
+                    <AnchorPane fx:id="dashboard_form" layoutX="143.0" layoutY="-6.0" prefHeight="706.0" prefWidth="1374.0" style="-fx-background-color: white;" stylesheets="dashboardDesign.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-6.0">
+                        <children>
+
+
+                            <AnchorPane layoutX="35.0" layoutY="29.0" prefHeight="649.0" prefWidth="1120.0" stylesheets="dashboardDesign.css" AnchorPane.leftAnchor="35.0" AnchorPane.topAnchor="30.0">
+                                <styleClass>
+                                    <String fx:value="white-bg1" />
+                                    <String fx:value="shadow" />
+                                </styleClass>
+                                <children>
+
+
+                                    <TableView fx:id="coaches_tableView" layoutX="22.0" layoutY="44.0" onMouseClicked="#coachesSelect" prefHeight="597.0" prefWidth="1046.0" AnchorPane.bottomAnchor="26.0" AnchorPane.leftAnchor="39.0" AnchorPane.rightAnchor="38.0" AnchorPane.topAnchor="41.0">
+                                        <columns>
+                                            <TableColumn fx:id="coaches_col_coachID" prefWidth="86.0" text="Coach ID" />
+                                            <TableColumn fx:id="coaches_col_nom" prefWidth="216.0" text="Nom Complet" />
+                                            <TableColumn fx:id="coaches_col_email" minWidth="8.0" prefWidth="232.0" text="Email" />
+                                            <TableColumn fx:id="coaches_col_telephone" prefWidth="255.0" text="Telephone" />
+                                            <TableColumn fx:id="coaches_col_etat" prefWidth="150.0" text="Etat" />
+                                            <TableColumn fx:id="coaches_col_action" prefWidth="103.0" text="Action" />
+                                        </columns>
+                                    </TableView>
+
+                                    <Button fx:id="addCoach_btn" layoutX="46.0" layoutY="8.0" mnemonicParsing="false" onAction="#goToAddForm" prefHeight="25.0" prefWidth="148.0" styleClass="btn" stylesheets="dashboardDesign.css" text="Ajouter" />                                </children>
+                            </AnchorPane>
+                        </children>
+                    </AnchorPane>
+
+
+                </AnchorPane>
+            </center>
+        </BorderPane>
+    </AnchorPane>
+</StackPane>

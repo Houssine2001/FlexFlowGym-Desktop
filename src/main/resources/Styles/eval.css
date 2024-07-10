@@ -1,0 +1,35 @@
+/* Style pour le TableView */
+.table-view {
+    -fx-background-color: #f5f5f5;
+}
+
+/* Style pour les en-têtes de colonne */
+.table-view .column-header-background {
+    -fx-background-color: #4CAF50;
+}
+
+/* Style pour le texte des en-têtes de colonne */
+.table-view .column-header {
+    -fx-text-fill: white;
+}
+
+/* Style pour les cellules */
+.table-cell {
+    -fx-border-color: #e0e0e0;
+    -fx-border-width: 0.5px;
+}
+
+/* Style pour les lignes alternées */
+.table-row-cell:odd {
+    -fx-background-color: #f0f0f0;
+}
+
+/* Style pour les lignes sélectionnées */
+.table-row-cell:selected {
+    -fx-background-color: #cce5ff;
+}
+
+/* Style pour les lignes survolées */
+.table-row-cell:hover {
+    -fx-background-color: #e0f2f1;
+}

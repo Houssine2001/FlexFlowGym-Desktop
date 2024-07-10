@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="700.0" minWidth="1366.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bty.Controllers.DashboardController">
+    <AnchorPane fx:id="main_form" layoutX="0.0" layoutY="0.0" prefHeight="750.0" prefWidth="234.0" style="-fx-background-color: white;">
+        <!--  atheya l borderPane eli feh atop wl left wl center  -->
+        <AnchorPane layoutX="-30" prefHeight="750.0" prefWidth="234.0" styleClass="border-pane" stylesheets="dashboardDesign.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+
+
+            <children>
+
+                <!--         **********************************       SIdeBar ADMIN  *******************************************-->
+
+                <AnchorPane fx:id="dashboard_Admin" layoutX="-10.0" prefHeight="555.0" prefWidth="210.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <AnchorPane prefHeight="555.0" prefWidth="220.0" stylesheets="dashboardDesign.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <styleClass>
+                            <String fx:value="nav" />
+                            <String fx:value="nav-border" />
+                            <String fx:value="shadow" />
+                        </styleClass>
+                        <FontAwesomeIconView fill="WHITE" glyphName="USER" layoutX="82.0" layoutY="91.0" size="6em" />
+                        <Label layoutX="78.0" layoutY="101.0" text="Bienvenue," textFill="WHITE">
+                            <font>
+                                <Font name="Tahoma" size="15.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="usernameAdmin" alignment="CENTER" layoutX="11.0" layoutY="120.0" prefHeight="23.0" prefWidth="201.0" text="MarcoMan" textFill="WHITE">
+                            <font>
+                                <Font name="Arial Bold" size="20.0" />
+                            </font>
+                        </Label>
+                        <Line endX="100.0" layoutX="111.0" layoutY="152.0" startX="-100.0" stroke="WHITE" />
+                        <Button fx:id="dashboard_btn" layoutX="22.0" layoutY="159.0" mnemonicParsing="false" onAction="#goToAccueil" prefHeight="35.0" prefWidth="180.0" styleClass="nav-btn" stylesheets="dashboardDesign.css" text="Acceuil" />
+                        <Button fx:id="coaches_btn" layoutX="21.0" layoutY="202.0" mnemonicParsing="false" onAction="#goToCoach" prefHeight="35.0" prefWidth="180.0" styleClass="nav-btn" stylesheets="dashboardDesign.css" text="Coachs" />
+                        <Button fx:id="members_btn" layoutX="23.0" layoutY="244.0" mnemonicParsing="false" onAction="#goToMembre" prefHeight="35.0" prefWidth="180.0" styleClass="nav-btn" stylesheets="dashboardDesign.css" text="Membres" />
+                        <Button fx:id="eventsAdmin_btn" layoutX="23.0" layoutY="287.0" mnemonicParsing="false" onAction="#goToEvents" prefHeight="35.0" prefWidth="180.0" styleClass="nav-btn" stylesheets="dashboardDesign.css" text="Evenements" />
+                        <Button fx:id="coursAdmin_btn" layoutX="23.0" layoutY="330.0" mnemonicParsing="false" onAction="#goToCours" prefHeight="35.0" prefWidth="180.0" styleClass="nav-btn" stylesheets="dashboardDesign.css" text="Cours" />
+                        <Button fx:id="offre_btn" layoutX="23.0" layoutY="376.0" mnemonicParsing="false" onAction="#goToOffre" prefHeight="35.0" prefWidth="180.0" styleClass="nav-btn" stylesheets="dashboardDesign.css" text="Offre Coaching" />
+                        <Button fx:id="storeAdmin_btn" layoutX="23.0" layoutY="420.0" mnemonicParsing="false" onAction="#goToStore" prefHeight="35.0" prefWidth="180.0" styleClass="nav-btn" stylesheets="dashboardDesign.css" text="Store" />
+                        <Button fx:id="commande_btn" layoutX="22.0" layoutY="464.0" mnemonicParsing="false" onAction="#goToCommande" prefHeight="35.0" prefWidth="180.0" styleClass="nav-btn" stylesheets="dashboardDesign.css" text="Commande" />
+                        <Line endX="100.0" layoutX="117.0" layoutY="551.0" startX="-100.0" stroke="WHITE" />
+                        <Button fx:id="profileAdmin_btn" disable="false" layoutX="20.0" layoutY="561.0" mnemonicParsing="false" onAction="#goToProfile" prefHeight="35.0" prefWidth="84.0" styleClass="nav-btn" stylesheets="dashboardDesign.css" text="Profile" />
+                        <Button fx:id="logout00_btn" onAction="#handleLogoutButton" layoutX="117.0" layoutY="561.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="84.0" styleClass="nav-btn" stylesheets="dashboardDesign.css"  text="Logout" />
+                        <VBox layoutX="21.0" layoutY="618.0" prefHeight="53.0" prefWidth="180.0" styleClass="report_container">
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Signaler une suggestion/un bug?" />
+
+                                <Button fx:id="report_btn" mnemonicParsing="false" text="Signaler">
+                                    <graphic>
+                                        <FontAwesomeIconView glyphName="PLUS" />
+                                    </graphic>
+                                </Button>
+                            </children>
+                        </VBox>
+
+                        <StackPane fx:id="contentPlaceholder" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="220.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                        <FontAwesomeIconView fill="WHITE" glyphName="HOME" layoutX="43.0" layoutY="188.0" size="20" />
+                        <FontAwesomeIconView fill="WHITE" glyphName="USER" layoutX="44.0" layoutY="226.0" size="20" />
+                        <FontAwesomeIconView fill="WHITE" glyphName="USERS" layoutX="40.0" layoutY="268.0" size="20" AnchorPane.leftAnchor="40.0" />
+                        <FontAwesomeIconView fill="WHITE" glyphName="CALENDAR" layoutX="43.0" layoutY="311.0" size="20" />
+                        <FontAwesomeIconView fill="WHITE" glyphName="BOOK" layoutX="42.0" layoutY="354.0" size="20" />
+                        <FontAwesomeIconView fill="WHITE" glyphName="BOOK" layoutX="41.0" layoutY="400.0" size="20" />
+                        <FontAwesomeIconView fill="WHITE" glyphName="SHOPPING_CART" layoutX="43.0" layoutY="444.0" size="20" />
+                        <FontAwesomeIconView fill="WHITE" glyphName="ID_CARD" layoutX="42.0" layoutY="488.0" size="20" text="" />
+                        <FontAwesomeIconView fill="WHITE" glyphName="EXTERNAL_LINK" layoutX="40.0" layoutY="633.0" size="20" />
+                        <Button fx:id="commande_btn1" layoutX="22.0" layoutY="508.0" mnemonicParsing="false" onAction="#goToPayment" prefHeight="35.0" prefWidth="180.0" styleClass="nav-btn" stylesheets="dashboardDesign.css" text="Transaction" />
+                        <FontAwesomeIconView fill="WHITE" glyphName="HANDSHAKE_ALT" layoutX="39.0" layoutY="532.0" size="20" />
+
+                    </AnchorPane>
+
+                </AnchorPane>
+            </children>
+
+
+
+        </AnchorPane>  <!--  atheya l borderPane eli feh atop wl left wl center  -->
+    </AnchorPane>
+</AnchorPane>

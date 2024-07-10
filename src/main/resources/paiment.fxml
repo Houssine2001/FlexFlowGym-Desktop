@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="700.0" minWidth="1366.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bty.Controllers.paimentController">
+
+    <AnchorPane fx:id="main_form" prefHeight="200.0" prefWidth="200.0">
+        <BorderPane layoutX="-8.0" layoutY="29.0" prefHeight="600.0" prefWidth="1100.0" styleClass="border-pane" stylesheets="dashboardDesign.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-8.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+
+
+
+            <center>
+                <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                    <!--*******************************************  DASHBOARD :)   *****************************-->
+                    <AnchorPane fx:id="dashboard_form" layoutX="143.0" layoutY="-6.0" prefHeight="706.0" prefWidth="1374.0" style="-fx-background-color: white;" stylesheets="dashboardDesign.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-6.0">
+                        <children>
+                            <AnchorPane layoutX="13.0" layoutY="14.0" prefHeight="157.0" prefWidth="1110.0" styleClass="bg" stylesheets="dashboardDesign.css">
+                                <styleClass>
+                                    <String fx:value="white-bg" />
+                                    <String fx:value="shadow" />
+                                </styleClass>
+                                <children>
+                                    <HBox layoutX="92.0" layoutY="11.0" prefHeight="135.0" prefWidth="246.0" styleClass="credit-card" stylesheets="dashboardDesign.css">
+                                        <children>
+                                            <!-- Add credit card icon or image -->
+                                            <ImageView fitHeight="215.0" fitWidth="215.0" layoutX="14.0" layoutY="88.0" preserveRatio="true">
+                                                <!-- Replace 'path_to_credit_card_image' with the actual path to your credit card image -->
+                                                <image>
+                                                    <Image url="@com/example/bty/imagesModuleProduit/card.png" />
+                                                </image>
+                                            </ImageView>
+
+
+                                        </children>
+                                    </HBox>
+
+                                    <HBox layoutX="92.0" layoutY="11.0" prefHeight="135.0" prefWidth="246.0" styleClass="credit-card" stylesheets="dashboardDesign.css">
+                                        <children>
+                                            <!-- Add credit card icon or image -->
+                                            <ImageView fitHeight="215.0" fitWidth="215.0" layoutX="14.0" layoutY="88.0" preserveRatio="true">
+                                                <!-- Replace 'path_to_credit_card_image' with the actual path to your credit card image -->
+                                                <image>
+                                                    <Image url="@com/example/bty/imagesModuleProduit/card.png" />
+                                                </image>
+                                            </ImageView>
+
+                                            <!-- Credit card details -->
+
+                                        </children>
+                                    </HBox>
+
+                                    <HBox layoutX="450.0" layoutY="11.0" prefHeight="135.0" prefWidth="246.0" styleClass="credit-card" stylesheets="dashboardDesign.css">
+                                        <children>
+                                            <!-- Add credit card icon or image -->
+                                            <ImageView fitHeight="215.0" fitWidth="215.0" layoutX="50.0" layoutY="88.0" preserveRatio="true">
+                                                <!-- Replace 'path_to_credit_card_image' with the actual path to your credit card image -->
+                                                <image>
+                                                    <Image url="@com/example/bty/imagesModuleProduit/card3.jpg" />
+                                                </image>
+                                            </ImageView>
+
+                                            <!-- Credit card details -->
+
+                                        </children>
+                                    </HBox>
+
+                                    <HBox layoutX="805.0" layoutY="11.0" prefHeight="135.0" prefWidth="246.0" styleClass="credit-card" stylesheets="dashboardDesign.css">
+                                        <children>
+                                            <!-- Add credit card icon or image -->
+                                            <ImageView fitHeight="215.0" fitWidth="215.0" layoutX="94.0" layoutY="88.0" preserveRatio="true">
+                                                <!-- Replace 'path_to_credit_card_image' with the actual path to your credit card image -->
+                                                <image>
+                                                    <Image url="@com/example/bty/imagesModuleProduit/card2.jpg" />
+                                                </image>
+                                            </ImageView>
+
+                                            <!-- Credit card details -->
+
+                                        </children>
+                                    </HBox>
+                                </children>
+                            </AnchorPane>
+
+                            <AnchorPane layoutX="8.0" layoutY="293.0" prefHeight="397.0" prefWidth="1120.0" stylesheets="dashboardDesign.css">
+                                <styleClass>
+                                    <String fx:value="white-bg1" />
+                                    <String fx:value="shadow" />
+                                </styleClass>
+                                <children>
+
+                                    <AnchorPane layoutX="2.0" layoutY="29.0" prefHeight="356.0" prefWidth="1117.0">
+                                        <children>
+
+                                            <TableView fx:id="tableView" layoutX="-1.0" layoutY="-66.0" prefHeight="425.0" prefWidth="1118.0">
+                                                <columns>
+
+                                                    <TableColumn fx:id="nomCol" prefWidth="136.0" text="Nom du carte" />
+                                                    <TableColumn fx:id="emailCol" prefWidth="234.0" text="Email" />
+                                                    <TableColumn fx:id="carteCol" prefWidth="173.0" text="N° de carte" />
+                                                    <TableColumn fx:id="mmCol" prefWidth="160.0" text="Mois d'expiration" />
+                                                    <TableColumn fx:id="yyCol" prefWidth="155.0" text="Année d'expiration" />
+                                                    <TableColumn fx:id="cvcCol" prefWidth="127.0" text="CVC" />
+                                                    <TableColumn fx:id="totalCol" prefWidth="132.0" text="total" />
+                                                </columns>
+                                            </TableView>
+                                        </children>
+                                    </AnchorPane>
+                                </children>
+                            </AnchorPane>
+                            <Separator layoutX="14.0" layoutY="179.0" prefHeight="0.0" prefWidth="1099.0" />
+                        </children>
+                    </AnchorPane>
+
+
+                </AnchorPane>
+            </center>
+        </BorderPane>
+    </AnchorPane>
+</StackPane>

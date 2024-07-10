@@ -1,0 +1,77 @@
+/* style.css */
+
+.card-container {
+    -fx-background-color: #2c3e50;
+    -fx-border-radius: 10;
+    -fx-padding: 20;
+    -fx-min-width: 200;
+    -fx-min-height: 300;
+    -fx-background-size: cover;
+}
+
+.card-title {
+    -fx-font-size: 24px;
+    -fx-text-fill: #3498db;
+    -fx-padding: 0 0 10 0;
+    -fx-font-family: 'Arial', sans-serif;
+    -fx-font-weight: bold;
+}
+
+.fancy-label {
+    -fx-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.grid-pane {
+    -fx-background-color: #F5F5F5;
+    -fx-padding: 25;
+    -fx-hgap: 15;
+    -fx-vgap: 15;
+    -fx-alignment: center;
+}
+
+.label {
+    -fx-font-size: 15px;
+    -fx-text-fill: #2c3e50;
+    -fx-padding: 5 0 5 0;
+    -fx-font-family: 'Segoe UI', Tahoma, Geneva, Verdana;
+    -fx-font-weight: bold;
+}
+
+.text-field {
+    -fx-font-size: 15px;
+    -fx-padding: 8;
+    -fx-pref-width: 250;
+    -fx-background-radius: 15;
+}
+
+.envoyer-button {
+    -fx-font-size: 13px;
+    -fx-padding: 10 16;
+    -fx-min-width: 230;
+    -fx-min-height: -5;
+    -fx-background-radius: 10;
+    -fx-background-color: #A62609;
+    -fx-text-fill: white;
+}
+
+.upload-button {
+    -fx-font-size: 13px;
+    -fx-padding: 10 16;
+    -fx-min-width: 60;
+    -fx-background-radius: 10;
+    -fx-text-fill: white;
+}
+
+.upload-button {
+    -fx-background-color: #2c3e50;
+}
+
+.envoyer-button:hover {
+    -fx-background-color: #2c3e50;
+}
+
+.upload-button:hover {
+    -fx-background-color: #A62609;
+}

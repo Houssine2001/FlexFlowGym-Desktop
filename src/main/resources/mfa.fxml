@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="login_container" stylesheets="verifCode.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bty.Controllers.usercontroller.mfaController">
+    <VBox prefHeight="400.0" prefWidth="200.0" styleClass="login_logo_container" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <Text fill="#ef2424" strokeType="OUTSIDE" strokeWidth="0.0" text="FlexFlow" wrappingWidth="104.017578125">
+            <stroke>
+                <LinearGradient endX="1.0" endY="1.0">
+                    <stops>
+                        <Stop>
+                            <color>
+                                <Color />
+                            </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                            <color>
+                                <Color red="1.0" green="1.0" blue="1.0" />
+                            </color>
+                        </Stop>
+                    </stops>
+                </LinearGradient>
+            </stroke></Text>
+    </VBox>
+    <VBox layoutX="232.0" layoutY="44.8" prefHeight="310.0" prefWidth="354.0" styleClass="login_form_container" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="45.0">
+        <Label fx:id="error_lbl" styleClass="error_lbl" />
+        <Label fx:id="enterCode_lbl" text="veuillez entrer votre code de vérification" />
+        <TextField fx:id="code_txtfd" prefHeight="25.0" prefWidth="235.0" styleClass="input_field" />
+        <Button fx:id="enterCode_btn" mnemonicParsing="false" onAction="#verifierCode" prefHeight="25.0" prefWidth="96.0" text="Enter" styleClass="enterCode-btn" />
+        <ImageView fitHeight="221.0" fitWidth="353.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@undraw_Code_typing_re_p8b9.png" />
+            </image>
+        </ImageView>
+    </VBox>
+</AnchorPane>

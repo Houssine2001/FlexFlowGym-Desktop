@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import java.lang.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="700.0" minWidth="1366.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bty.Controllers.AcceuillController">
+
+    <AnchorPane fx:id="main_form" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;">
+        <BorderPane layoutX="146.0" layoutY="29.0" prefHeight="600.0" prefWidth="1100.0" styleClass="border-pane" stylesheets="dashboardDesign.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+
+            <center>
+                <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+                    <!--*******************************************  DASHBOARD :)   *****************************-->
+
+                    <AnchorPane fx:id="dashboardAnchorPane" layoutX="12.0" layoutY="420.0" prefHeight="239.0" prefWidth="1110.0" style="-fx-background-color: white;" stylesheets="dashboardDesign.css">
+                        <children>
+                            <AnchorPane layoutX="11.0" layoutY="-8.0" prefHeight="253.0" prefWidth="1103.0" styleClass="bg" stylesheets="dashboardDesign.css">
+                                <styleClass>
+                                    <String fx:value="white-bg" />
+                                    <String fx:value="shadow" />
+                                </styleClass>
+                                <children>
+                                    <LineChart fx:id="chart" layoutX="22.0" layoutY="14.0" prefHeight="182.0" prefWidth="1081.0">
+                                        <xAxis>
+                                            <CategoryAxis side="BOTTOM" />
+                                        </xAxis>
+                                        <yAxis>
+                                            <NumberAxis side="LEFT" />
+                                        </yAxis>
+                                    </LineChart>
+
+
+                                </children>
+                            </AnchorPane>
+
+
+                        </children>
+                    </AnchorPane>
+
+
+                    <AnchorPane layoutX="13.0" layoutY="14.0" prefHeight="157.0" prefWidth="1110.0" styleClass="bg" stylesheets="dashboardDesign.css">
+                        <styleClass>
+                            <String fx:value="white-bg" />
+                            <String fx:value="shadow" />
+                        </styleClass>
+                        <children>
+                            <AnchorPane layoutX="92.0" layoutY="11.0" prefHeight="135.0" prefWidth="246.0" styleClass="nav1" stylesheets="dashboardDesign.css">
+                                <children>
+                                    <FontAwesomeIconView fill="WHITE" glyphName="USERS" layoutX="14.0" layoutY="88.0" size="5em" />
+                                    <Label alignment="CENTER_RIGHT" layoutX="84.0" layoutY="14.0" prefHeight="17.0" prefWidth="148.0" text="Le nombre des membres" textFill="WHITE">
+                                        <font>
+                                            <Font name="Tahoma" size="12.0" />
+                                        </font>
+                                    </Label>
+                                    <Label fx:id="dashboard_NM" alignment="CENTER" layoutX="84.0" layoutY="97.0" prefHeight="17.0" prefWidth="148.0" text="0" textFill="WHITE">
+                                        <font>
+                                            <Font name="Tahoma" size="13.0" />
+                                        </font>
+                                    </Label>
+                                </children>
+                            </AnchorPane>
+                            <AnchorPane layoutX="429.0" layoutY="9.0" prefHeight="135.0" prefWidth="246.0" styleClass="nav2" stylesheets="dashboardDesign.css">
+                                <children>
+                                    <FontAwesomeIconView fill="WHITE" glyphName="USER" layoutX="14.0" layoutY="91.0" size="5em" />
+                                    <Label alignment="CENTER_RIGHT" layoutX="84.0" layoutY="17.0" prefHeight="17.0" prefWidth="148.0" text="Le nombre de coach" textFill="WHITE">
+                                        <font>
+                                            <Font name="Tahoma" size="13.0" />
+                                        </font>
+                                    </Label>
+                                    <Label fx:id="dashboard_NC" alignment="CENTER" layoutX="84.0" layoutY="100.0" prefHeight="17.0" prefWidth="148.0" text="0" textFill="WHITE">
+                                        <font>
+                                            <Font name="Tahoma" size="15.0" />
+                                        </font>
+                                    </Label>
+                                </children>
+                            </AnchorPane>
+                            <AnchorPane layoutX="772.0" layoutY="9.0" prefHeight="135.0" prefWidth="246.0" styleClass="nav1" stylesheets="dashboardDesign.css">
+                                <children>
+                                    <FontAwesomeIconView fill="WHITE" glyphName="EXCLAMATION" layoutX="14.0" layoutY="91.0" size="5em" />
+                                    <Label alignment="CENTER_RIGHT" layoutX="84.0" layoutY="17.0" prefHeight="17.0" prefWidth="148.0" text="Réclamation" textFill="WHITE">
+                                        <font>
+                                            <Font name="Tahoma" size="13.0" />
+                                        </font>
+                                    </Label>
+                                    <Label fx:id="dashboard_TI" alignment="CENTER" layoutX="84.0" layoutY="100.0" prefHeight="17.0" prefWidth="148.0" text="0.0 \dnt" textFill="WHITE">
+                                        <font>
+                                            <Font name="Tahoma" size="15.0" />
+                                        </font>
+                                    </Label>
+                                </children>
+                            </AnchorPane>
+                        </children>
+                    </AnchorPane>
+                    <Text fx:id="mostRequestedEventText" layoutX="0.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="L'événement le plus demandé : Zumba" wrappingWidth="536.734375">
+                        <font>
+                            <Font name="Arial" size="24" />
+                        </font>
+                        <fill>
+                            <Color red="0.0" green="0.0" blue="0.0" />
+                        </fill>
+                        <styleClass>
+                            <String fx:value="bold-text" />
+                        </styleClass>
+                    </Text>
+
+                    <Text fx:id="mostLikedcours" layoutX="14.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Le cour le plus aimé : " wrappingWidth="525.734375">
+                        <font>
+                            <Font name="Arial" size="24" />
+                        </font>
+                        <fill>
+                            <Color red="0.0" green="0.0" blue="0.0" />
+                        </fill>
+                        <styleClass>
+                            <String fx:value="bold-text" />
+                        </styleClass>
+                    </Text>
+
+
+                </AnchorPane>
+            </center>
+        </BorderPane>
+    </AnchorPane>
+</StackPane>
